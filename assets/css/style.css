@@ -1,70 +1,72 @@
 /* <tag> Sections ---------------------------*/
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-
-main {
-    margin: 20px 20px;
+    margin: 1em ;
 }
 
 header {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     height: 5rem;
+    padding: 0 5px;
 }
 
+h1 {
+    font-size: 30pt;
+}
+
+p {
+    text-align: center;
+    font-size: 20pt;
+    margin-bottom: 2em;
+    padding: 0 50px;
+}
+
+button {
+    padding: 0;
+}
 /* #id Section -----------------------------*/
-#container {
-    display: block;
-    justify-content: space-between;
-    border: 1px solid red;
-    height: auto;
+
+#startBtn {
+    align-self: center;
+    font-size: 20pt;
+    margin-bottom: 1em;
+    border-radius: 10px;
 }
 
 /* .class Sections -------------------------*/
-.hideMe {
-    display: none;
-}
-
-.highscores {
-    border: 1px solid blue;
-    width: 110px;
+.highScoresBtn {
+    font-size: 12pt;
+    width: auto;
     height: 20px;
-    ;
+    background-color: white;
+    border: none;
 }
 
 .timer {
     display: flex;
     justify-content: flex-end;
-    border: 1px solid green;
-    width: 110px;
     height: 20px;
 }
 
-.game {
-    display: block;
-    height: auto;
-    width: auto;
-}
+.gameLayout {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    background-color: rgb(53, 109, 147);
+    border-radius: 25px;
+    color: rgb(239, 239, 239);
+}  
 
 .title {
     display: flex;
     justify-content: center;
-    height: 4rem;
-    border: 1px solid red;
+    margin-bottom: auto;
 }
 
-.question {
-    display: flex;
-    justify-content: center;
-    height: 4rem;
-    border: 1px solid red;
-}
-.answers {
-    display: flex;
-    justify-content: center;
-    height: 4rem;
-    border: 1px solid red;
+/* Tool for removing sections when needed */
+.hideMe {
+    display: none;
 }

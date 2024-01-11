@@ -7,28 +7,53 @@
     <title>Code Quiz</title>
 </head>
 <body>
-    <div id="container">
-        <header>
-            <button class="highscores" type="button">Highscores</button>
-            <div class="timer">Timer</div>
-        </header>
-        <main>
-            <div class="game">
-                <div id="gameStart"></div>
-                <div id="question1"></div>
-                <div id="question2"></div>
-                <div id="quesiton3"></div>
-                <div id="question4"></div>
-                <div id="gameEnd"></div>
-                <div id="scorePage"></div>
-            </div>
-            <!-- <div class="title">
-                <h2>Code Quiz</h2>
-            </div>
-            <div class="question">Questions</div>
-            <div class="answers">Answers</div> -->
-
-        </main>
-    </div>
+    <!-- Top of displaying Highscore button and timer -->
+    <header>
+        <button type="button" class="highScoresBtn">High Scores</button>
+        <div class="timer">Timer</div>
+    </header>
+    <main>
+    <!--  Game Container  -->
+        <!-- Start Game Containing Description and Start Button -->
+        <div id="gameStart" class="gameLayout">
+            <h1 class="title">Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related quiestions within the time limit.
+                Keep in mind that incorrect answers will penalize your score/time by 10
+                seconds!
+            </p>
+            <button type="button" id="startBtn">Start Quiz</button>
+        </div>
+        <!--  First Question with Answers -->
+        <div id="question1" class="gameLayout hideMe">
+            <h1 class="title">Question 1</h1>
+            <ol class="answers"></ol>
+        </div>
+        <!--  Second Question with Answers-->
+        <div id="question2" class="gameLayout hideMe">
+            <h1 class="title">Question 2</h1>
+            <ol class="answers"></ol>
+        </div>
+        <!--  Third Question with Answers -->
+        <div id="quesiton3" class="gameLayout hideMe">
+            <h1 class="title">Question 3</h1>
+            <ol class="answers"></ol>
+        </div>
+        <!--  Fourth Question with Answers -->
+        <div id="question4" class="gameLayout hideMe">
+            <h1 class="title">Question 4</h1>
+            <ol class="answers"></ol>
+        </div>
+        <!--  "Game End" with Users Final Score and Name input for High score-->
+        <div id="gameEnd" class="gameLayout hideMe">
+            <h1 class="title">All Done!</h1>
+            <!-- Enter Users Score Here in JavaScript -->
+            <textarea></textarea>
+        </div>
+        <!--  Displaying all High Scores Saved -->
+        <div id="scorePage" class="gameLayout hideMe">
+            <h1 class="title">High Scores</h1>
+            <ol class="buttons"></ol>                    
+        </div>
+    </main>
 </body>
 </html>
