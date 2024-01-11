@@ -42,6 +42,9 @@ button {
     background-color: white;
     border: none;
 }
+.highScoresBtn:hover {color: purple;}
+.highScoresBtn:hover {background-color: rgb(248, 248, 248);}
+
 
 .timer {
     display: flex;
@@ -53,6 +56,7 @@ button {
     display: flex;
     max-width: 600px;
     width: 100%;
+    max-height: 600px;
     margin: 0 auto;
     flex-direction: column;
     background-color: rgb(53, 109, 147);
@@ -70,3 +74,4 @@ button {
 .hideMe {
     display: none;
 }
+
