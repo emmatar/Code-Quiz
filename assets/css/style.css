@@ -33,6 +33,7 @@ button {
     font-size: 15pt;
     border-radius: 10px;
 }
+
 /* #id Section -----------------------------*/
 
 #startBtn {
@@ -42,7 +43,17 @@ button {
     border-radius: 10px;
 }
 
+#initials {
+    margin: 1rem;
+}
 
+#content {
+    text-align: center;
+}
+
+#scorePage {
+    border-radius: 0 0 30px 30px;
+}
 
 
 /* .class Sections -------------------------*/
@@ -64,7 +75,7 @@ button {
 }
 
 .gameLayout {
-    display: none;
+    display: flex;
     max-width: 700px;
     max-height: 700px;
     width: 100%;
@@ -75,9 +86,6 @@ button {
     color: rgb(239, 239, 239);
 }  
 
-.gameLayout.active {
-    display: flex;
-}
 
 .title {
     display: flex;

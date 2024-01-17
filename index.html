@@ -16,22 +16,26 @@
     <main>
     <!--  Game Container  -->
         <!-- Start Game Containing Description and Start Button -->
-        <div id="gameStart" class="gameLayout active">
+        <div id="gameStart" class="gameLayout">
             <h1 class="title">Coding Quiz Challenge</h1>
             <p>Try to answer the following code-related questions within the time limit.
-                Keep in mind that incorrect answers will penalize your score/time by 10
+                Keep in mind that incorrect answers will penalize your score/time by 20
                 seconds!
             </p>
             <button type="button" id="startBtn">Start Quiz</button>
         </div>
         <!--  First Question with Answers -->
-        <div id="question" class="gameLayout">
+        <div id="question" class="gameLayout hideMe">
             <h2 id="content"></h2>
             <div class="answer"></div>
         </div>
         <!--  "Game End" with Users Final Score and Name input for High score-->
-        <div id="gameEnd" class="gameLayout">
-            <!-- Enter Users Score Here in JavaScript -->
+        <div id="gameEnd" class="gameLayout hideMe">
+            <h2>Results</h2>
+            <p>Heres your final score: <span  id="score"></span></p>
+            <p>Enter your initials:</p>
+            <input type="text" id="initials" max="3" />
+            <button id="btn-initials">Submit</button>
         </div>
         <!--  Displaying all High Scores Saved -->
         <div id="scorePage" class="gameLayout">                 
