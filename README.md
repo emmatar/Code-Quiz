@@ -21,7 +21,7 @@ After answering all of the questions, the quiz results will appear and an input 
 
 
 
-Click this link to find out: 
+Click this link to find out: https://emmatar.github.io/Code-Quiz/
 
 ![Screenshot1 of Code Quiz](/assets/images/img1.png)
 ![Screenshot2 of Code Quiz](/assets/images/img2.png)
